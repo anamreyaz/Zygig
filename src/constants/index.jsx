@@ -13,10 +13,16 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 import App from "../App";
 
+
+// "Services", - app web , ui ux 
+// industries-  future -  https://www.intellectsoft.net/platforms
+//   { label: "In", href: "#" },
+//   { label: "Projects", href: "#" },
+//   { label: "Testimonials
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
+  { label: "Services", href: "#" },
+  { label: "Industries", href: "#" },
+  { label: "Projects", href: "#" },
   { label: "Testimonials", href: "#" },
 ];
 
