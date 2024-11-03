@@ -1,8 +1,5 @@
-import { AppWindow, AppWindowIcon, AppWindowMac, BotMessageSquare, Laptop, Paperclip, PenSquare, Phone } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
+import { AppWindow, BotMessageSquare, Laptop, Paperclip, PenSquare, Phone } from "lucide-react";
+
 import { GlobeLock } from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
@@ -11,19 +8,18 @@ import user3 from "../assets/profile-pictures/user3.jpg";
 import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
-import App from "../App";
 
 
 // "Services", - app web , ui ux 
-// industries-  future -  https://www.intellectsoft.net/platforms
-//   { label: "In", href: "#" },
-//   { label: "Projects", href: "#" },
-//   { label: "Testimonials
+// industries-  future -  https://www.intellectsoft.net/platforms  . industries that can be targeted
+//   Projects
+//   Testimonials
 export const navItems = [
-  { label: "Services", href: "#" },
-  { label: "Industries", href: "#" },
-  { label: "Projects", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/Services" },
+  { label: "Industries", href: "/Industries" },
+  { label: "Projects", href: "/Projects" },
+  { label: "Testimonials", href: "/Testimonials" },
 ];
 
 export const testimonials = [
