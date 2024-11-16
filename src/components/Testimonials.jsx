@@ -2,11 +2,15 @@ import { testimonials } from "../constants";
 
 const Testimonials = () => {
   return (
-    <div className="mt-20 tracking-wide">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lg:my-20">
+    <div className="font flex flex-col items-center mt-16 sm:mt-14 lg:mt-24 ')]">
+      <h1 className="font-semibold px-40 text-2xl sm:text-3xl lg:text-4xl text-center tracking-wide text-yellow-500">
         What People are saying
-      </h2>
-      <div className="flex flex-wrap justify-center">
+      </h1>
+      <p className="font-euclid mt-2 text-lg text-center text-white-500 opacity-75 max-w-2xl">
+        Unlock your potential with our custom-made digital solutions and academic writing services,
+        tailored.
+      </p>
+      <div className="flex flex-wrap mt-5 justify-center">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
             <div className="bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin">
