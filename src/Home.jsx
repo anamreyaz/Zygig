@@ -1,5 +1,5 @@
 import FeatureSection from "./components/FeatureSection";
-import Workflow from "./components/Workflow";
+// import Workflow from "./components/Workflow";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 // import Home from "./components/HeroSection";
@@ -14,7 +14,7 @@ const Home = () => {
         <FeatureSection />
         {/* <Workflow /> */}
         <Testimonials />
-        {/* <Footer /> */}
+        <Footer />
       </div>
       
     </>

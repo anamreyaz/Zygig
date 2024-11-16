@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 // import Home from "./components/Home";
 import FeatureSection from "./components/FeatureSection";
-import Workflow from "./components/Workflow";
+// import Workflow from "./components/Workflow";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import Home from './Home';

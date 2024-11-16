@@ -94,82 +94,82 @@ export const features = [
   },
 ];
 
-export const checklistItems = [
-  {
-    title: "Tailored Solutions",
-    description:
-      "We deliver customized services that align perfectly with your unique business needs.",
-  },
-  {
-    title: "Affordable Pricing",
-    description:
-      "High-quality solutions at competitive prices make professional services accessible to all.",
-  },
-  {
-    title: "Expert Team",
-    description:
-      "Our skilled team brings expertise across app development, web development, research papers, machine learning models and UI/UX design",
-  },
-  {
-    title: "Commitment to Quality",
-    description:
-      "We prioritize reliable, high-standard solutions to drive real results for your business.",
-  },
-];
+// export const checklistItems = [
+//   {
+//     title: "Tailored Solutions",
+//     description:
+//       "We deliver customized services that align perfectly with your unique business needs.",
+//   },
+//   {
+//     title: "Affordable Pricing",
+//     description:
+//       "High-quality solutions at competitive prices make professional services accessible to all.",
+//   },
+//   {
+//     title: "Expert Team",
+//     description:
+//       "Our skilled team brings expertise across app development, web development, research papers, machine learning models and UI/UX design",
+//   },
+//   {
+//     title: "Commitment to Quality",
+//     description:
+//       "We prioritize reliable, high-standard solutions to drive real results for your business.",
+//   },
+// ];
 
-export const pricingOptions = [
-  {
-    title: "Minimal",
-    price: "2000",
-    features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
-    ],
-  },
-  {
-    title: "Moderate",
-    price: "8000",
-    features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
-    ],
-  },
-  {
-    title: "Advance",
-    price: "18000",
-    features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
-    ],
-  },
-];
+// export const pricingOptions = [
+//   {
+//     title: "Minimal",
+//     price: "2000",
+//     features: [
+//       "Private board sharing",
+//       "5 Gb Storage",
+//       "Web Analytics",
+//       "Private Mode",
+//     ],
+//   },
+//   {
+//     title: "Moderate",
+//     price: "8000",
+//     features: [
+//       "Private board sharing",
+//       "10 Gb Storage",
+//       "Web Analytics (Advance)",
+//       "Private Mode",
+//     ],
+//   },
+//   {
+//     title: "Advance",
+//     price: "18000",
+//     features: [
+//       "Private board sharing",
+//       "Unlimited Storage",
+//       "High Performance Network",
+//       "Private Mode",
+//     ],
+//   },
+// ];
 
-export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
-];
+// export const resourcesLinks = [
+//   { href: "#", text: "Getting Started" },
+//   { href: "#", text: "Documentation" },
+//   { href: "#", text: "Tutorials" },
+//   { href: "#", text: "API Reference" },
+//   { href: "#", text: "Community Forums" },
+// ];
 
-export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
-];
+// export const platformLinks = [
+//   { href: "#", text: "Features" },
+//   { href: "#", text: "Supported Devices" },
+//   { href: "#", text: "System Requirements" },
+//   { href: "#", text: "Downloads" },
+//   { href: "#", text: "Release Notes" },
+// ];
 
-export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
-];
+// export const communityLinks = [
+//   { href: "#", text: "Events" },
+//   { href: "#", text: "Meetups" },
+//   { href: "#", text: "Conferences" },
+//   { href: "#", text: "Hackathons" },
+//   { href: "#", text: "Jobs" },
+// ];
