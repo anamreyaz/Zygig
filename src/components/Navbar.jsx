@@ -36,12 +36,10 @@ const Navbar = () => {
             {/* <a href="#" className="py-2 px-3 border rounded-md">
               Sign In
             </a> */}
-            <a
-              href="#"
-              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
-            >
-              Contact Us
-            </a>
+            <a href="#" className="border border-yellow-500 px-4 mx-3 rounded-lg flex justify-center gap-2 items-center min-w-36 min-h-10">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#f59e0b"><path d="M2 8.99374C2 5.68349 4.67654 3 8.00066 3H15.9993C19.3134 3 22 5.69478 22 8.99374V21H8.00066C4.68659 21 2 18.3052 2 15.0063V8.99374ZM14 11V13H16V11H14ZM8 11V13H10V11H8Z"></path></svg>
+          Hire Us
+        </a>
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>
@@ -64,7 +62,7 @@ const Navbar = () => {
               </a> */}
               <a
                 href="#"
-                className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800"
+                className="py-2 px-3 rounded-md "
               >
                 Contact Us
               </a>

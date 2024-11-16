@@ -7,5 +7,30 @@
 
 :root {
   font-family: "Poppins", sans-serif;
+  /* font-family: 'Euclid Circular A'; */
   color-scheme: dark;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('/fonts/Euclid-Circular-A-Regular.woff2') format('woff2'),
+       url('/fonts/Euclid-Circular-A-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('/fonts/Euclid-Circular-A-Medium.woff2') format('woff2'),
+       url('/fonts/Euclid-Circular-A-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('/fonts/Euclid-Circular-A-SemiBold.woff2') format('woff2'),
+       url('/fonts/Euclid-Circular-A-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
 }
