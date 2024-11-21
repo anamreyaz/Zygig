@@ -1,3 +1,4 @@
+//Services Section of Home Page
 import { features } from "../constants";
 import CardGrid from "./CardGrid";
 
@@ -17,13 +18,6 @@ const FeatureSection = () => {
       <div>
       < CardGrid/>
       </div>
-
-
-
-
-
-
-
 
 
 

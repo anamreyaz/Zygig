@@ -14,13 +14,13 @@ import user6 from "../assets/profile-pictures/user6.jpg";
 // industries-  future -  https://www.intellectsoft.net/platforms  . industries that can be targeted
 //   Projects
 //   Testimonials
-export const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/Services" },
-  { label: "Industries", href: "/Industries" },
-  { label: "Projects", href: "/Projects" },
-  { label: "Testimonials", href: "/Testimonials" },
-];
+// export const navItems = [
+//   { label: "Home", href: "/" },
+//   { label: "Services", href: "/Services" },
+//   { label: "Industries", href: "/Industries" },
+//   { label: "Projects", href: "/Projects" },
+//   { label: "Testimonials", href: "/Testimonials" },
+// ];
 
 export const testimonials = [
   {
