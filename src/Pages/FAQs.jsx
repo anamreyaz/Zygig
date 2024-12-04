@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const faqs = [
   {
@@ -28,7 +30,7 @@ const faqs = [
   },
 ];
 
-const FAQ = () => {
+const FAQPage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
   const faqRef = useRef(null);
@@ -59,49 +61,55 @@ const FAQ = () => {
   }, []);
 
   return (
-    <div
-      ref={faqRef}
-      className={`bg-gradient-to-r from-gray-900 via-[#09090B] to-gray-900 min-h-screen flex flex-col items-center -mb-2 pt-8 px-4 transition-all duration-1000 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
-    >
-      <header className="text-center mb-8 text-white">
-        <h1 className="text-7xl font-medium pt-20">
-          Clearing Up Common <div className="italic pt-4">Queries</div>
-        </h1>
-        <p className="text-gray-300 mt-6 text-base">
-          Dive into our FAQ section for insights into our services.We've compiled answers 
-          <br /> to common questions to ensure you're well-informed.
-        </p>
-      </header>
-      <div className="w-full max-w-5xl bg-gray-transparent p-6">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="border-b border-gray-800 py-[26px] cursor-pointer hover:scale-105 transition-all duration-300"
-            onClick={() => toggleFAQ(index)}
-          >
-            <div className="flex justify-between items-center">
-              <h2 className="text-lg font-normal text-gray-100">{faq.question}</h2>
-              <span className="text-gray-400 text-3xl">
-                {activeIndex === index ? "-" : "+"}
-              </span>
-            </div>
+    <div className="bg-gradient-to-r from-gray-900 via-[#09090B] to-gray-900 min-h-screen">
+      {/* Navbar */}
+      <Navbar />
+
+      {/* FAQs Section */}
+      <div
+        ref={faqRef}
+        className={`flex flex-col items-center px-4 py-16 transition-all duration-1000 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
+        <header className="text-center mb-12 text-white">
+          <h1 className="text-5xl font-extrabold">
+            Frequently Asked <span className="italic">Questions</span>
+          </h1>
+          <p className="text-lg text-gray-300 mt-4">
+            Explore our FAQ section to get quick answers to your questions and insights into our processes.
+          </p>
+        </header>
+
+        <div className="w-full max-w-4xl bg-gray-transparent p-6 space-y-6">
+          {faqs.map((faq, index) => (
             <div
-              className={`overflow-hidden transition-all duration-500 ${
-                activeIndex === index ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
-              }`}
+              key={index}
+              className="border-b border-gray-800 py-4 cursor-pointer hover:scale-105 transition-transform duration-300"
+              onClick={() => toggleFAQ(index)}
             >
-              <p className="text-gray-400 mt-2">{faq.answer}</p>
+              <div className="flex justify-between items-center">
+                <h2 className="text-lg font-medium text-gray-100">{faq.question}</h2>
+                <span className="text-gray-400 text-2xl">
+                  {activeIndex === index ? "-" : "+"}
+                </span>
+              </div>
+              <div
+                className={`overflow-hidden transition-all duration-500 ${
+                  activeIndex === index ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <p className="text-gray-400 mt-2">{faq.answer}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
 
-export default FAQ;
-
-
-
+export default FAQPage;

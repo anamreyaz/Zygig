@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { useScrollAnimation } from "./useScrollAnimation";
 import { InstagramIcon, TwitterIcon, LinkedinIcon, FacebookIcon } from "./SvgIcons";
 import Logo from "../assets/Logowhite.png";
-
+import Privacy from '../Pages/Privacy';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   useScrollAnimation();
@@ -74,13 +74,13 @@ const Footer = () => {
           </h3>
           <ul className="space-y-3.5">
             <li className="font-light text-sm text-white opacity-60 hover:text-gray-500 hover:scale-105 hover:opacity-90 hover:underline cursor-pointer transition-all duration-300">
-              FAQs
+            <Link to="/AboutUs">AboutUs</Link>
             </li>
             <li className="font-light text-sm text-white opacity-60 hover:text-gray-500 hover:scale-105 hover:opacity-90 hover:underline cursor-pointer transition-all duration-300">
-              Devices
+            <Link to="/FAQs">FAQs</Link>
             </li>
             <li className="font-light text-sm text-white opacity-60 hover:text-gray-500 hover:scale-105 hover:opacity-90 hover:underline cursor-pointer transition-all duration-300">
-              Contact
+            <Link to="/ContactUsPage">ContactUs</Link>
             </li>
             <li className="font-light text-sm text-white opacity-60 hover:text-gray-500 hover:scale-105 hover:opacity-90 hover:underline cursor-pointer transition-all duration-300">
               Creator
@@ -94,13 +94,13 @@ const Footer = () => {
           </h3>
           <ul className="space-y-3.5">
             <li className="font-light text-sm text-white opacity-60 hover:text-gray-500 hover:scale-105 hover:opacity-90 hover:underline cursor-pointer transition-all duration-300">
-              Privacy
+            <Link to="/Privacy" >Privacy</Link>
             </li>
             <li className="font-light text-sm text-white opacity-60 hover:text-gray-500 hover:scale-105 hover:opacity-90 hover:underline cursor-pointer transition-all duration-300">
-              Terms
+            <Link to="/Terms" >Terms</Link>
             </li>
             <li className="font-light text-sm text-white opacity-60 hover:text-gray-500 hover:scale-105 hover:opacity-90 hover:underline cursor-pointer transition-all duration-300">
-              Refund
+            <Link to="/Refund" >Refund</Link>
             </li>
             <li className="font-light text-sm text-white opacity-60 hover:text-gray-500 hover:scale-105 hover:opacity-90 hover:underline cursor-pointer transition-all duration-300">
               Cookie
