@@ -1,7 +1,18 @@
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 import logotransparent from "../assets/logotransparent.png";
+
+const buttonVariants = {
+  hover: {
+    scale: 1.02,
+    backgroundColor: "transparent",
+  },
+  tap: {
+    scale: 0.98,
+  },
+};
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -30,7 +41,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 py-3 lg:max-w-full backdrop-blur-lg border-b border-neutral-700/80">
+    <nav className="relative top-0 z-50 pt-5 pb-3 lg:min-w-full backdrop-transparent-lg bg-gradient-to-b from-[rgba(0,0,0,0.6)] to-transparent bg-opacity-5">
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
@@ -45,7 +56,7 @@ const Navbar = () => {
               <li key={index}>
                 <Link 
                   to={item.href}
-                  className="text-white opacity-60 hover:opacity-100 transition-opacity"
+                  className="text-white hover:opacity-50 transition-opacity"
                 >
                   {item.label}
                 </Link>
@@ -53,24 +64,21 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Desktop Hire Us Button */}
+          {/* Desktop Motion Button */}
           <div className="hidden lg:block">
-            <a 
-              href="#" 
-              className="border border-yellow-500 px-4 py-2 rounded-lg flex items-center gap-2 text-white hover:bg-yellow-500 hover:text-black transition-colors"
+            <motion.div
+              initial={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                viewBox="0 0 24 24" 
-                width="20" 
-                height="20" 
-                fill="currentColor"
-                className="flex-shrink-0"
+              <motion.button
+                whileHover="hover"
+                whileTap="tap"
+                variants={buttonVariants}
+                className="relative px-10 py-3 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
               >
-                <path d="M2 8.99374C2 5.68349 4.67654 3 8.00066 3H15.9993C19.3134 3 22 5.69478 22 8.99374V21H8.00066C4.68659 21 2 18.3052 2 15.0063V8.99374ZM14 11V13H16V11H14ZM8 11V13H10V11H8Z" />
-              </svg>
-              Hire Us
-            </a>
+                <span className="relative z-10">Hire Us</span>
+              </motion.button>
+            </motion.div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -102,25 +110,22 @@ const Navbar = () => {
                   </li>
                 ))}
 
-                {/* Mobile Hire Us Button */}
+                {/* Mobile Motion Button */}
                 <li className="pt-8">
-                  <a 
-                    href="#" 
-                    className="border border-yellow-500 px-8 py-3 rounded-lg flex items-center gap-2 text-white hover:bg-yellow-500 hover:text-black transition-colors"
-                    onClick={toggleNavbar}
+                  <motion.div
+                    initial={{ opacity: 1, y: 0 }}
+                    animate={{ opacity: 1, y: 0 }}
                   >
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      viewBox="0 0 24 24" 
-                      width="20" 
-                      height="20" 
-                      fill="currentColor"
-                      className="flex-shrink-0"
+                    <motion.button
+                      whileHover="hover"
+                      whileTap="tap"
+                      variants={buttonVariants}
+                      className="relative px-8 py-4 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
+                      onClick={toggleNavbar}
                     >
-                      <path d="M2 8.99374C2 5.68349 4.67654 3 8.00066 3H15.9993C19.3134 3 22 5.69478 22 8.99374V21H8.00066C4.68659 21 2 18.3052 2 15.0063V8.99374ZM14 11V13H16V11H14ZM8 11V13H10V11H8Z" />
-                    </svg>
-                    Hire Us
-                  </a>
+                      <span className="relative z-10">Get Started Today!</span>
+                    </motion.button>
+                  </motion.div>
                 </li>
               </ul>
             </div>
@@ -132,84 +137,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// import { Menu, X } from "lucide-react";
-// import { useState } from "react";
-// import logotransparent from "../assets/logotransparent.png";
-// // import { navItems } from "../constants";
-// import { Link } from 'react-router-dom';
 
-
-// const Navbar = () => {
-//   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
-
-//   const toggleNavbar = () => {
-//     setMobileDrawerOpen(!mobileDrawerOpen);
-//   };
-
-//   return (
-//     <nav className="sticky top-0 z-50 py-3 lg:max-w-full backdrop-blur-lg border-b border-neutral-700/80">
-//       <div className="container px-4 mx-auto relative lg:text-sm">
-//         <div className="flex justify-between items-center">
-//           <div className="flex items-center flex-shrink-0">
-//             <img className="-ml-20 h-10 w-[330px] invert  object-cover overflow-hidden rounded-lg" src={logotransparent} alt="Logo" />
-//             {/* <span className="text-xl tracking-tight">ZYGIG</span> */}
-//           </div>
-//           <ul className="hidden lg:flex -ml-20 space-x-12 text-[17px] ">
-//             <li className="text-white opacity-60 hover:opacity-100"><a href="/" >Home</a></li>
-//             <li className="text-white opacity-60 hover:opacity-100"><a href="/Services" >Services</a> </li>
-//             <li className="text-white opacity-60 hover:opacity-100"><a href="/Projects" >Projects</a></li>
-//             <li className="text-white opacity-60 hover:opacity-100"><a href="/Testimonials" >Testimonials</a></li>
-//             {/* {navItems.map((item, index) => ( */}
-//               {/* <li className="hover:opacity-100" key={index}> */}
-//                 {/* <a href={item.href}>{item.label}</a> */}
-//                 {/* <Link  to={item.href}>{item.label}</Link> */}
-//               {/* </li> */}
-//             {/* ))} */}
-//           </ul>
-
-//           <div className="hidden lg:flex justify-center space-x-12 items-center">
-
-//             {/* SIGN IN BUTTON */}
-
-//             {/* <a href="#" className="py-2 px-3 border rounded-md">
-//               Sign In
-//             </a> */}
-//             <a href="#" className="border border-yellow-500 px-4 mx-3 rounded-lg flex justify-center gap-2 items-center min-w-36 min-h-10">
-//           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#f59e0b"><path d="M2 8.99374C2 5.68349 4.67654 3 8.00066 3H15.9993C19.3134 3 22 5.69478 22 8.99374V21H8.00066C4.68659 21 2 18.3052 2 15.0063V8.99374ZM14 11V13H16V11H14ZM8 11V13H10V11H8Z"></path></svg>
-//           Hire Us
-//         </a>
-//           </div>
-//           <div className="lg:hidden md:flex flex-col justify-end">
-//             <button onClick={toggleNavbar}>
-//               {mobileDrawerOpen ? <X /> : <Menu />}
-//             </button>
-//           </div>
-//         </div>
-//         {mobileDrawerOpen && (
-//           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
-//             <ul>
-//               {navItems.map((item, index) => (
-//                 <li key={index} className="py-4">
-//                   <a href={item.href}>{item.label}</a>
-//                 </li>
-//               ))}
-//             </ul>
-//             <div className="flex space-x-6">
-//               {/* <a href="#" className="py-2 px-3 border rounded-md">
-//                 Sign In
-//               </a> */}
-//               <a
-//                 href="#"
-//                 className="py-2 px-3 rounded-md "
-//               >
-//                 Contact Us
-//               </a>
-//             </div>
-//           </div>
-//         )}
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;

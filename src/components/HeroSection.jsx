@@ -1,51 +1,197 @@
-import video1 from "../assets/video1.mp4";
-import video2 from "../assets/video2.mp4";
+// import React from 'react';
+// import { motion } from 'framer-motion';
+// import background from "../assets/background.jpg";
+// import Navbar from "../components/Navbar";
+
+// const fadeUpVariants = {
+//   hidden: { opacity: 0, y: 30 }, // Slightly lower start position for a smoother rise
+//   visible: {
+//     opacity: 1,
+//     y: 0, // Move to original position
+//     transition: {
+//       duration: 1.2, // Slower animation
+//       ease: [0.42, 0, 0.58, 1], // Smooth cubic-bezier easing
+//     },
+//   },
+// };
+
+// const HeroSection = () => {
+//   return (
+//     <section className="relative min-h-screen flex flex-col items-center justify-center mb-56">
+//       {/* Image as background */}
+//       <div className="absolute inset-0 z-0">
+//         <img src={background} alt="Background" className="w-full h-full object-cover opacity-80" />
+//       </div>
+
+//       {/* Navbar - Position it at the top */}
+//       <div className="absolute top-0 left-0 w-full z-10">
+//         <Navbar />
+//       </div>
+
+//       {/* Main content */}
+//       <div className="relative text-center ">
+//         <motion.h1
+//           variants={fadeUpVariants}
+//           initial="hidden"
+//           animate="visible"
+//           className="font-inter text-center text-[85px] font-normal text-white leading-[85px]"
+//         >
+//           Driven by Your Vision
+//           <br />
+//           Delivered with Expertise
+//         </motion.h1>
+
+//         <motion.p
+//           variants={fadeUpVariants}
+//           initial="hidden"
+//           animate="visible"
+//           transition={{ delay: 0.3 }} // Slight delay for staggered animation
+//           className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto pt-6 mb-12"
+//         >
+//           Your trusted partner for innovative and personalized services.
+//         </motion.p>
+
+//         <motion.div
+//           initial={{ opacity: 0, y: 30 }}
+//           animate={{ opacity: 1, y: 0 }}
+//           transition={{ delay: 0.20, duration: 1.0 }} // Slower and smoother for the button
+//         >
+//           <motion.button
+//             whileHover={{
+//               scale: 1.02,
+//               backgroundColor: 'transparent'
+//             }}
+//             whileTap={{ scale: 0.98 }}
+//             transition={{
+//               type: 'spring',
+//               stiffness: 400,
+//               damping: 25,
+//             }}
+//             className="relative px-8 py-4 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
+//           >
+//             <span className="relative z-10">Get Started Today!</span>
+//           </motion.button>
+//         </motion.div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default HeroSection;
+
+
+
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import background from "../assets/background.jpg";
+import Navbar from "./Navbar";
+
+// Animation Variants
+const fadeUpVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1.2,
+      ease: [0.42, 0, 0.58, 1],
+    },
+  },
+};
+
+const buttonVariants = {
+  hover: {
+    scale: 1.02,
+    backgroundColor: "transparent",
+  },
+  tap: {
+    scale: 0.98,
+  },
+};
 
 const HeroSection = () => {
+  // Ref for the entire section
+  const sectionRef = useRef(null);
+
+  // Parallax effect using useScroll and useTransform
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+
+  // Map scroll progress to vertical movement (parallax effect)
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+
   return (
-    
-    <div className="font flex flex-col items-center mt-0 sm:mt-0 lg:mt-0 ')]">
-   
-      <h1 className="font-semibold px-40 text-2xl sm:text-3xl lg:text-4xl text-center tracking-wide text-yellow-500">
-        <div>
-          14-in-1 Browser Extension
-        </div>
-        <div>
-          Developers And Designers Love
-        </div>
-      </h1>
-      <p className="font-euclid mt-3 text-lg text-center text-white-500 opacity-75 max-w-2xl">
-        Unlock your potential with our custom-made digital solutions and academic writing services,
-        tailored.
-      </p>
-      <div className="font-medium text-sm flex justify-center my-6">
-        <a href="#" className="border border-yellow-500 px-4 mx-3 rounded-lg flex justify-center gap-2 items-center min-w-40 min-h-10">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#f59e0b"><path d="M2 8.99374C2 5.68349 4.67654 3 8.00066 3H15.9993C19.3134 3 22 5.69478 22 8.99374V21H8.00066C4.68659 21 2 18.3052 2 15.0063V8.99374ZM14 11V13H16V11H14ZM8 11V13H10V11H8Z"></path></svg>
-          Hire Us
-        </a>
-        <a href="#" className="border border-yellow-500 px-4 mx-3 rounded-lg flex justify-center gap-2 items-center min-w-40 min-h-10">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#f59e0b"><path d="M2 8.99374C2 5.68349 4.67654 3 8.00066 3H15.9993C19.3134 3 22 5.69478 22 8.99374V21H8.00066C4.68659 21 2 18.3052 2 15.0063V8.99374ZM14 11V13H16V11H14ZM8 11V13H10V11H8Z"></path></svg>
-          About Us
-        </a>
+    <section
+      ref={sectionRef}
+      className="relative min-h-screen flex flex-col items-center justify-center"
+    >
+      {/* Background Image with Gradient Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={background}
+          alt="Background"
+          className="w-full h-full object-cover opacity-90"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#09090B]"></div>
       </div>
-      {/* max-w-4xl */}
-      <div className="">
-      {/* min-w-6xl md:w-1/2 lg:w-1/3 h-auto */}
-      <img 
-        src="/src/assets/hero.png" alt="Description" className="relative w-full min-h-screen bg-transparent grid place-items-center -mt-32 "
-/>
+
+      {/* Navbar */}
+      <div className="absolute top-0 left-0 w-full z-10">
+        <Navbar />
       </div>
-      {/* <div className="flex mt-10 justify-center">
-        <video autoPlay loop muted className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4 ">
-          <source src={video1} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video autoPlay loop muted className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4">
-          <source src={video2} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div> */}
-    </div>
+
+      {/* Main Content with Parallax Effect */}
+      <motion.div
+        className="relative text-center z-10"
+        style={{ y }} // Parallax effect applied here
+      >
+        {/* Heading */}
+        <motion.h1
+          variants={fadeUpVariants}
+          initial="hidden"
+          animate="visible"
+          className="font-inter mt-16 text-center text-[85px] font-normal text-white leading-[85px]"
+        >
+          Driven by Your Vision
+          <br />
+          Delivered with Expertise
+        </motion.h1>
+
+        {/* Subtext */}
+        <motion.p
+          variants={fadeUpVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.3 }}
+          className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto pt-6 mb-12"
+        >
+          Your trusted partner for innovative and personalized services.
+        </motion.p>
+
+        {/* Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 1.0 }}
+        >
+          <motion.button
+            whileHover="hover"
+            whileTap="tap"
+            variants={buttonVariants}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 25,
+            }}
+            className="relative px-8 py-4 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
+          >
+            <span className="relative z-10">Get Started Today!</span>
+          </motion.button>
+        </motion.div>
+      </motion.div>
+    </section>
   );
 };
 
