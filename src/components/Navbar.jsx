@@ -2,7 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-import logotransparent from "../assets/logotransparent.png";
+import Logo from "../assets/Logowhite.png";
 
 const buttonVariants = {
   hover: {
@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <div className="flex items-center flex-shrink-0">
-             <img className="-ml-20 h-10 w-[330px] invert  object-cover overflow-hidden rounded-lg" src={logotransparent} alt="Logo" />
+             <img className="-ml-10 h-[50px] w-[240px] object-cover overflow-hidden rounded-lg" src={Logo} alt="Logo" />
              {/* <span className="text-xl tracking-tight">ZYGIG</span> */}
            </div>
 
