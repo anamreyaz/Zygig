@@ -1,83 +1,4 @@
-// import React from 'react';
-// import { motion } from 'framer-motion';
-// import background from "../assets/background.jpg";
-// import Navbar from "../components/Navbar";
 
-// const fadeUpVariants = {
-//   hidden: { opacity: 0, y: 30 }, // Slightly lower start position for a smoother rise
-//   visible: {
-//     opacity: 1,
-//     y: 0, // Move to original position
-//     transition: {
-//       duration: 1.2, // Slower animation
-//       ease: [0.42, 0, 0.58, 1], // Smooth cubic-bezier easing
-//     },
-//   },
-// };
-
-// const HeroSection = () => {
-//   return (
-//     <section className="relative min-h-screen flex flex-col items-center justify-center mb-56">
-//       {/* Image as background */}
-//       <div className="absolute inset-0 z-0">
-//         <img src={background} alt="Background" className="w-full h-full object-cover opacity-80" />
-//       </div>
-
-//       {/* Navbar - Position it at the top */}
-//       <div className="absolute top-0 left-0 w-full z-10">
-//         <Navbar />
-//       </div>
-
-//       {/* Main content */}
-//       <div className="relative text-center ">
-//         <motion.h1
-//           variants={fadeUpVariants}
-//           initial="hidden"
-//           animate="visible"
-//           className="font-inter text-center text-[85px] font-normal text-white leading-[85px]"
-//         >
-//           Driven by Your Vision
-//           <br />
-//           Delivered with Expertise
-//         </motion.h1>
-
-//         <motion.p
-//           variants={fadeUpVariants}
-//           initial="hidden"
-//           animate="visible"
-//           transition={{ delay: 0.3 }} // Slight delay for staggered animation
-//           className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto pt-6 mb-12"
-//         >
-//           Your trusted partner for innovative and personalized services.
-//         </motion.p>
-
-//         <motion.div
-//           initial={{ opacity: 0, y: 30 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ delay: 0.20, duration: 1.0 }} // Slower and smoother for the button
-//         >
-//           <motion.button
-//             whileHover={{
-//               scale: 1.02,
-//               backgroundColor: 'transparent'
-//             }}
-//             whileTap={{ scale: 0.98 }}
-//             transition={{
-//               type: 'spring',
-//               stiffness: 400,
-//               damping: 25,
-//             }}
-//             className="relative px-8 py-4 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
-//           >
-//             <span className="relative z-10">Get Started Today!</span>
-//           </motion.button>
-//         </motion.div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default HeroSection;
 
 
 
@@ -85,6 +6,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import background from "../assets/background.jpg";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 // Animation Variants
 const fadeUpVariants = {
@@ -187,7 +109,7 @@ const HeroSection = () => {
             }}
             className="relative px-8 py-4 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
           >
-            <span className="relative z-10">Get Started Today!</span>
+            <span className="relative z-10"><Link to="/HireUs">Get Started Today!</Link></span>
           </motion.button>
         </motion.div>
       </motion.div>

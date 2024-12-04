@@ -51,7 +51,7 @@ const Navbar = () => {
            </div>
 
           {/* Desktop Navigation */}
-          <ul className="hidden lg:flex -ml-36 space-x-14 text-[17px]">
+          <ul className="hidden lg:flex -ml-10 space-x-14 text-[17px]">
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link 
@@ -76,7 +76,7 @@ const Navbar = () => {
                 variants={buttonVariants}
                 className="relative px-10 py-3 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
               >
-                <span className="relative z-10">Hire Us</span>
+                <span className="relative z-10"><Link to="/HireUs">Hire Us</Link></span>
               </motion.button>
             </motion.div>
           </div>

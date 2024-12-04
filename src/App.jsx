@@ -13,6 +13,7 @@ import TermsAndConditionsPage from './Pages/Terms';
 import FAQPage from './Pages/FAQs';
 import AboutUsPage from './Pages/AboutUs';
 import ContactUsPage from './Pages/ContactUs';
+import HireUsPage from './Pages/HireUs';
 
 const App = () => {
   return (
@@ -30,8 +31,8 @@ const App = () => {
           <Route path="/Terms" element={<TermsAndConditionsPage />} />
           <Route path="/FAQs" element={<FAQPage />} />
           <Route path="/AboutUs" element={<AboutUsPage />} />
-          <Route path="/ContactUsPage" element={<ContactUsPage/>} />
-          {/* <Route path="/Workflow" element={<Workflow />} /> */}
+          <Route path="/ContactUs" element={<ContactUsPage/>} />
+          <Route path="/HireUs" element={<HireUsPage />} />
         </Routes>
       </div>
     </Router>
