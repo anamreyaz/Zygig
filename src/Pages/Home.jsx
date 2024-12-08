@@ -6,6 +6,7 @@ import Testimonials from "../components/Testimonials";
 import HeroSection from "../components/HeroSection";
 // import Navbar from "../components/Navbar";
 import FAQ from "../components/FAQ"
+import Banner from "../components/Banner";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         {/* <Workflow /> */}
         <Testimonials />
         <FAQ />
+        <Banner/>
         <Footer />
       </div>
       
