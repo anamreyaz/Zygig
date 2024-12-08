@@ -17,7 +17,7 @@ const TestimonialPage = () => {
   }, []);
 
   const testimonials = [
-    {
+    {  
         photo: user5,
         name: 'John Doe',
         designation: 'CEO',

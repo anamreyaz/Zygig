@@ -70,14 +70,16 @@ const Navbar = () => {
               initial={{ opacity: 1, y: 0 }}
               animate={{ opacity: 1, y: 0 }}
             >
+            <Link to="/BookaFreeCall">
               <motion.button
                 whileHover="hover"
                 whileTap="tap"
                 variants={buttonVariants}
                 className="relative px-10 py-3 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
               >
-                <span className="relative z-10"><Link to="/HireUs">Hire Us</Link></span>
+                <span className="relative z-10">Book a Free Call</span>
               </motion.button>
+              </Link>
             </motion.div>
           </div>
 

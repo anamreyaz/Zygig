@@ -13,7 +13,8 @@ import TermsAndConditionsPage from './Pages/Terms';
 import FAQPage from './Pages/FAQs';
 import AboutUsPage from './Pages/AboutUs';
 import ContactUsPage from './Pages/ContactUs';
-import HireUsPage from './Pages/HireUs';
+import BookFreeCallPage from './Pages/BookaFreeCall';
+import WhyChooseUsPage from './Pages/WhyChooseUs';
 
 const App = () => {
   return (
@@ -32,7 +33,9 @@ const App = () => {
           <Route path="/FAQs" element={<FAQPage />} />
           <Route path="/AboutUs" element={<AboutUsPage />} />
           <Route path="/ContactUs" element={<ContactUsPage/>} />
-          <Route path="/HireUs" element={<HireUsPage />} />
+          <Route path="/BookaFreeCall" element={<BookFreeCallPage />} />
+          <Route path="/WhyChooseUs" element={<WhyChooseUsPage />} />
+
         </Routes>
       </div>
     </Router>
