@@ -15,6 +15,7 @@ import AboutUsPage from './Pages/AboutUs';
 import ContactUsPage from './Pages/ContactUs';
 import BookFreeCallPage from './Pages/BookaFreeCall';
 import WhyChooseUsPage from './Pages/WhyChooseUs';
+import ProjectsPage from './Pages/Project';
 
 const App = () => {
   return (
@@ -25,8 +26,8 @@ const App = () => {
           <Route path="/" element={<Home/>} />
           <Route path="/Services" element={<ServicesPage />} />
           {/* <Route path="/Industries" element={<div className="font-bold">Industries </div>} /> */}
-          <Route path="/Projects" element={<div>Projects Section</div>} />
           <Route path="/Testimonial" element={<Testimonial />} />
+          <Route path="/Projects" element={<ProjectsPage />} />
           <Route path="/Privacy" element={<PrivacyPolicyPage />} />
           <Route path="/Refund" element={<RefundPolicyPage />} />
           <Route path="/Terms" element={<TermsAndConditionsPage />} />
