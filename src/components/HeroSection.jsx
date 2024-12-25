@@ -1,5 +1,3 @@
-
-
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import background from "../assets/background.jpg";
@@ -30,22 +28,18 @@ const buttonVariants = {
 };
 
 const HeroSection = () => {
-  // Ref for the entire section
   const sectionRef = useRef(null);
-
-  // Parallax effect using useScroll and useTransform
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
   });
 
-  // Map scroll progress to vertical movement (parallax effect)
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex flex-col items-center justify-center"
+      className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8"
     >
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
@@ -64,15 +58,15 @@ const HeroSection = () => {
 
       {/* Main Content with Parallax Effect */}
       <motion.div
-        className="relative text-center z-10"
-        style={{ y }} // Parallax effect applied here
+        className="relative text-center z-10 px-4"
+        style={{ y }}
       >
         {/* Heading */}
         <motion.h1
           variants={fadeUpVariants}
           initial="hidden"
           animate="visible"
-          className="font-inter mt-16 text-center text-[70px] font-normal text-white leading-[85px]"
+          className="font-inter mt-16 text-center text-4xl sm:text-5xl md:text-6xl font-normal text-white leading-[1.2]"
         >
           Your Vision, Our Expertise
           <br />
@@ -85,14 +79,14 @@ const HeroSection = () => {
           initial="hidden"
           animate="visible"
           transition={{ delay: 0.3 }}
-          className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto pt-6 mb-12"
+          className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto pt-6 mb-12 leading-relaxed"
         >
           Zygig provides top-notch freelancing services tailored to your needs.
         </motion.p>
 
         {/* Buttons */}
         <motion.div
-          className="flex space-x-6 justify-center"
+          className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 1.0 }}
@@ -108,7 +102,7 @@ const HeroSection = () => {
                 stiffness: 400,
                 damping: 25,
               }}
-              className="relative px-8 py-4 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
+              className="relative px-8 py-4 w-full sm:w-auto bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
             >
               <span className="relative z-10">Book a Free Call</span>
             </motion.button>
@@ -125,7 +119,7 @@ const HeroSection = () => {
                 stiffness: 400,
                 damping: 25,
               }}
-              className="relative px-8 py-4 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
+              className="relative px-8 py-4 w-full sm:w-auto bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
             >
               <span className="relative z-10">Why Choose Us</span>
             </motion.button>
@@ -137,4 +131,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-

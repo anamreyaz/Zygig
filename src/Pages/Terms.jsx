@@ -53,11 +53,13 @@ const TermsAndConditionsPage = () => {
       <Navbar />
 
       {/* Page Content */}
-      <div className="min-h-screen px-6 md:px-20 lg:px-40 py-20">
+      <div className="min-h-screen px-4 sm:px-8 md:px-20 lg:px-40 py-20">
         {/* Header */}
         <header className="text-center mb-16" data-aos="fade-down">
-          <h1 className="text-5xl font-extrabold mb-4">Terms and Conditions</h1>
-          <p className="text-lg text-gray-400">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">
+            Terms and Conditions
+          </h1>
+          <p className="text-lg sm:text-base text-gray-400 leading-relaxed">
             Please read these Terms and Conditions carefully before using Zygig.
             They govern your access to and use of our platform.
           </p>
@@ -72,7 +74,9 @@ const TermsAndConditionsPage = () => {
               data-aos="fade-up"
             >
               <h2 className="text-3xl font-bold mb-4">{section.title}</h2>
-              <p className="text-gray-300 text-lg">{section.content}</p>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                {section.content}
+              </p>
             </div>
           ))}
         </div>

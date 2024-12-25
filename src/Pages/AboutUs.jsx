@@ -13,12 +13,12 @@ const AboutUsPage = () => {
     {
       title: 'Who We Are',
       content:
-        'Zygig is a forward thinking company focused on turning ideas into creative solutions. Our team of passionate professionals works to connect technology with business success. We are committed to delivering high quality products and services designed to meet your specific needs..',
+        'Zygig is a forward-thinking company focused on turning ideas into creative solutions. Our team of passionate professionals works to connect technology with business success. We are committed to delivering high-quality products and services designed to meet your specific needs.',
     },
     {
       title: 'Our Mission',
       content:
-        'Our mission is to help businesses and individuals grow by offering innovative solutions that improve efficiency, encourage creativity, and drive progress. We aim to be your trusted partner, using technology to open new opportunities for success',
+        'Our mission is to help businesses and individuals grow by offering innovative solutions that improve efficiency, encourage creativity, and drive progress. We aim to be your trusted partner, using technology to open new opportunities for success.',
     },
     {
       title: 'Our Vision',
@@ -28,7 +28,7 @@ const AboutUsPage = () => {
     {
       title: 'Our Values',
       content:
-        'Our core values are integrity, innovation, and customer centricity. We believe in being honest and trustworthy, consistently seeking creative solutions, and focusing on our clients needs and goals. By delivering results that exceed expectations, we strive to build long-term relationships with our clients.',
+        'Our core values are integrity, innovation, and customer-centricity. We believe in being honest and trustworthy, consistently seeking creative solutions, and focusing on our clients’ needs and goals. By delivering results that exceed expectations, we strive to build long-term relationships with our clients.',
     },
     {
       title: 'Our Team',
@@ -48,24 +48,27 @@ const AboutUsPage = () => {
       <Navbar />
 
       {/* Page Content */}
-      <div className="min-h-screen px-6 md:px-20 lg:px-40 py-20">
+      <div className="min-h-screen px-6 sm:px-12 md:px-20 lg:px-40 py-10 md:py-20">
         {/* Header */}
-        <header className="text-center mb-16" data-aos="fade-down">
-          <h1 className="text-5xl font-extrabold mb-4">About Us</h1>
-          <p className="text-lg text-gray-400">
-            Your Success is our priority. We bring together creativity, technology <br/> and strategy to deliver solutions that truly make a difference.
+        <header className="text-center mb-16 max-w-5xl mx-auto" data-aos="fade-down">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+            About Us
+          </h1>
+          <p className="text-lg md:text-xl text-gray-400">
+            Your Success is our priority. We bring together creativity, technology <br className="hidden md:block"/> 
+            and strategy to deliver solutions that truly make a difference.
           </p>
         </header>
 
         {/* About Sections */}
-        <div className="space-y-12">
+        <div className="space-y-12 max-w-7xl mx-auto">
           {sections.map((section, index) => (
             <div
               key={index}
-              className="p-6 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:brightness-110 duration-500"
+              className="p-6 sm:p-8 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:brightness-110 duration-500"
               data-aos="fade-up"
             >
-              <h2 className="text-3xl font-bold mb-4">{section.title}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">{section.title}</h2>
               <p className="text-gray-300 text-lg">{section.content}</p>
             </div>
           ))}

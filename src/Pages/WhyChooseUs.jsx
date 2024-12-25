@@ -48,30 +48,27 @@ const WhyChooseUsPage = () => {
       <Navbar />
 
       {/* Header Section */}
-      <div
-        className="text-center py-20"
-        data-aos="fade-down"
-      >
-        <h1 className="text-5xl font-extrabold mb-4">Why Choose Us?</h1>
-        <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+      <div className="text-center py-16 px-6 md:py-20" data-aos="fade-down">
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-6">Why Choose Us?</h1>
+        <p className="text-base sm:text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
           Discover what sets us apart. Our unique approach, expertise, and commitment to excellence make us the perfect partner for your success.
         </p>
       </div>
 
       {/* Reasons Section */}
-      <div className="py-12 px-6 md:px-20 lg:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="py-12 px-6 md:px-16 lg:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
         {reasons.map((reason, index) => (
           <div
             key={index}
-            className={`p-6 rounded-3xl shadow-lg bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 hover:shadow-2xl transform transition-transform duration-500 ${
+            className={`p-8 rounded-3xl shadow-lg bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 hover:shadow-2xl transform transition-transform duration-500 ${
               index % 2 === 0 ? "hover:-translate-y-3" : "hover:translate-y-3"
             }`}
             data-aos="zoom-in"
             data-aos-delay={`${index * 100}`}
           >
-            <div className="text-5xl mb-4 text-center">{reason.icon}</div>
-            <h2 className="text-2xl font-bold mb-4 text-center">{reason.title}</h2>
-            <p className="text-gray-300 text-lg text-center">{reason.description}</p>
+            <div className="text-6xl mb-6 text-center">{reason.icon}</div>
+            <h2 className="text-2xl font-semibold mb-4 text-center">{reason.title}</h2>
+            <p className="text-gray-300 text-center leading-relaxed">{reason.description}</p>
           </div>
         ))}
       </div>

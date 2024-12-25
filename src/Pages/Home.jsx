@@ -13,7 +13,6 @@ import ProjectsSection from "../components/Projectssection";
 const Home = () => {
   return (
     <>
-    {/* <div className="bg-[url('/src/assets/mainbgimg.jpg')] bg-contain insert-0 bg-opacity-100 z-10"> */}
     <div>
         {/* <Navbar /> */}
         <HeroSection />

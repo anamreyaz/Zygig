@@ -6,7 +6,7 @@ const faqs = [
   {
     question: "What services does Zygig offer?",
     answer:
-      "Zygig offers app development, web development, UI/UX design, machine learning solutions. and research paper writing, tailored to meet your specific goals and business needs.",
+      "Zygig offers app development, web development, UI/UX design, machine learning solutions, and research paper writing tailored to meet your specific goals and business needs.",
   },
   {
     question: "How do I book a call with your team?",
@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "How long does a project typically take?",
     answer:
-      "Timelines vary depending on the project's complexity, but we always ensure timely delivery. without compromising quality. We'll provide an estimated timeline during our consultation.",
+      "Timelines vary depending on the project's complexity, but we always ensure timely delivery without compromising quality. We'll provide an estimated timeline during our consultation.",
   },
   {
     question: "Can you customize your services based on our requirements?",
@@ -28,32 +28,6 @@ const faqs = [
     answer:
       "Absolutely! We offer post-project support, including maintenance, updates, and assistance to ensure everything runs smoothly.",
   },
-  {
-    question: "What industries do you work with?",
-    answer:
-      "We work across various industries, including education, e-commerce, healthcare, startups. and more, providing tailored digital and research solutions.",
-  },
-  {
-    question: "How do you ensure quality in your projects?",
-    answer:
-      "Our team follows industry best practices, thorough testing, and feedback loops to ensure every project meets the highest quality standards.",
-  },
-  {
-    question: "What technologies do you use for development?",
-    answer:
-      "We use modern technologies like React, Flutter, Node.js, Python, and various Al/ML tools, ensuring cutting-edge and efficient solutions.",
-  },
-  {
-    question: "Do you offer revisions on projects?",
-    answer:
-      "Yes, we value your satisfaction. We offer a set number of revisions based on project scope to meet your expectations.",
-  },
-  {
-    question: "How can I get started with Zygig?",
-    answer:
-      "Simply reach out through our \"Book a Call button\", and we'll discuss your project requirements and how we can help you achieve your goals.",
-  },
-  
 ];
 
 const FAQPage = () => {
@@ -94,38 +68,45 @@ const FAQPage = () => {
       {/* FAQs Section */}
       <div
         ref={faqRef}
-        className={`flex flex-col items-center px-4 py-16 transition-all duration-1000 ${
+        className={`flex flex-col items-center px-6 sm:px-12 md:px-20 py-12 md:py-20 transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
         <header className="text-center mb-12 text-white">
-          <h1 className="text-5xl font-extrabold">
+          <h1 className="text-4xl md:text-5xl font-extrabold">
             Frequently Asked <span className="italic">Questions</span>
           </h1>
-          <p className="text-lg text-gray-300 mt-4">
+          <p className="text-lg md:text-xl text-gray-300 mt-4">
             Explore our FAQ section to get quick answers to your questions and insights into our processes.
           </p>
         </header>
 
-        <div className="w-full max-w-4xl bg-gray-transparent p-6 space-y-6">
+        {/* FAQ Container */}
+        <div className="w-full max-w-4xl p-4 sm:p-6 space-y-6">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-b border-gray-800 py-4 cursor-pointer hover:scale-105 transition-transform duration-300"
+              className="border-b border-gray-800 py-6 cursor-pointer hover:scale-105 transition-transform duration-300"
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-center">
-                <h2 className="text-lg font-medium text-gray-100">{faq.question}</h2>
+                <h2 className="text-lg md:text-xl font-medium text-gray-100">
+                  {faq.question}
+                </h2>
                 <span className="text-gray-400 text-2xl">
                   {activeIndex === index ? "-" : "+"}
                 </span>
               </div>
               <div
                 className={`overflow-hidden transition-all duration-500 ${
-                  activeIndex === index ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
+                  activeIndex === index
+                    ? "max-h-[400px] opacity-100"
+                    : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-gray-400 mt-2">{faq.answer}</p>
+                <p className="text-gray-400 mt-4 text-base md:text-lg">
+                  {faq.answer}
+                </p>
               </div>
             </div>
           ))}

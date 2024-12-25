@@ -53,26 +53,32 @@ const PrivacyPolicyPage = () => {
       <Navbar />
 
       {/* Page Content */}
-      <div className="min-h-screen px-6 md:px-20 lg:px-40 py-20">
+      <div className="min-h-screen px-6 sm:px-12 md:px-20 lg:px-40 py-16">
         {/* Header */}
-        <header className="text-center mb-16" data-aos="fade-down">
-          <h1 className="text-5xl font-extrabold mb-4">Privacy Policy</h1>
-          <p className="text-lg text-gray-400">
+        <header className="text-center mb-12 sm:mb-16" data-aos="fade-down">
+          <h1 className="text-5xl sm:text-4xl font-extrabold mb-4">
+            Privacy Policy
+          </h1>
+          <p className="text-lg sm:text-base text-gray-400">
             At Zygig, we value your trust and are committed to protecting your privacy.
             Learn more about how we handle your data responsibly.
           </p>
         </header>
 
         {/* Sections */}
-        <div className="space-y-12">
+        <div className="space-y-10 sm:space-y-12 max-w-5xl mx-auto">
           {sections.map((section, index) => (
             <div
               key={index}
-              className="p-6 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:brightness-110 duration-500"
+              className="p-6 sm:p-8 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 hover:brightness-110 duration-500"
               data-aos="fade-up"
             >
-              <h2 className="text-3xl font-bold mb-4">{section.title}</h2>
-              <p className="text-gray-300 text-lg">{section.content}</p>
+              <h2 className="text-3xl sm:text-2xl font-bold mb-4">
+                {section.title}
+              </h2>
+              <p className="text-gray-300 text-lg sm:text-base">
+                {section.content}
+              </p>
             </div>
           ))}
         </div>

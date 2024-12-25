@@ -1,57 +1,62 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import backgroundImage from "../assets/Projectsbg.jpg"; // Import the background image
-import Humraah from "../assets/Projects Images/HumraahStore/Mockup2.jpg"
-import am from "../assets/Projects Images/9amStore/Mockup2.jpg"
-import BotBuddy from "../assets/Projects Images/BotBuddy/Mockup2.jpg"
-import Mirage from "../assets/Projects Images/Mirage/Mockup2.jpg"
-import RP from "../assets/Projects Images/ResearchPaper/Mockup1.jpg"
-import ML from "../assets/Projects Images/MLmodel/Mockup2.jpg"
+import backgroundImage from "../assets/Projectsbg.jpg";
+import Humraah from "../assets/Projects Images/HumraahStore/Mockup2.jpg";
+import am from "../assets/Projects Images/9amStore/Mockup2.jpg";
+import BotBuddy from "../assets/Projects Images/BotBuddy/Mockup2.jpg";
+import Mirage from "../assets/Projects Images/Mirage/Mockup2.jpg";
+import RP from "../assets/Projects Images/ResearchPaper/Mockup1.jpg";
+import ML from "../assets/Projects Images/MLmodel/Mockup2.jpg";
 
 const projects = [
   {
     id: 1,
     name: "Humraah Store",
-    description: "A responsive e-commerce fashion website offering a sleek design and user-friendly interface for seamless shopping.",
-    imageUrl:Humraah,
+    description:
+      "A responsive e-commerce fashion website offering a sleek design and user-friendly interface for seamless shopping.",
+    imageUrl: Humraah,
     link: "https://humraahstore.com/?srsltid=AfmBOoq1I1mBX3kOFFx6O4oh3vFaAnRuOQUOm1yxb0zSP-EU_yeRi6HQ",
   },
   {
     id: 2,
     name: "9am",
-    description: "A comprehensive e-commerce store website featuring multiple payment gateways for convenient and secure transactions.",
+    description:
+      "A comprehensive e-commerce store website featuring multiple payment gateways for convenient and secure transactions.",
     imageUrl: am,
     link: "https://9am.co.in/?srsltid=AfmBOopyBt-NqeSTZ2LnVlixfnGf9a964CC7TGUGBz3L3uUbn-5gpyHg",
   },
   {
     id: 3,
     name: "BotBuddy",
-    description: "A fully personalized Al chatbot app for Android and iOS with a stunning Ul and intelligent responses.",
+    description:
+      "A fully personalized AI chatbot app for Android and iOS with a stunning UI and intelligent responses.",
     imageUrl: BotBuddy,
     link: "https://play.google.com/store/apps/details?id=com.ethix.botbuddy",
   },
   {
     id: 4,
     name: "Mirage",
-    description: "A personalized wallpaper app offering unlimited, high-quality wallpapers to customize and enhance device aesthetics.",
+    description:
+      "A personalized wallpaper app offering unlimited, high-quality wallpapers to customize and enhance device aesthetics.",
     imageUrl: Mirage,
     link: "https://play.google.com/store/apps/details?id=com.ethix.mirage",
   },
   {
     id: 5,
     name: "Man of the Match Analysis",
-    description: "A feedback-based analytical approach identifying key factors influencing the selection of \"Man of the Match\" awards.",
+    description:
+      'A feedback-based analytical approach identifying key factors influencing the selection of "Man of the Match" awards.',
     imageUrl: RP,
     link: "https://ieeexplore.ieee.org/document/10629539",
   },
   {
     id: 6,
     name: "Diabetic Retinopathy Detection",
-    description: "An Al-powered model for detecting and classifying diabetic retinopathy using advanced retinal image analysis.",
+    description:
+      "An AI-powered model for detecting and classifying diabetic retinopathy using advanced retinal image analysis.",
     imageUrl: ML,
     link: "https://github.com/anamreyaz/Diabetic-Retinopathy-Detection",
   },
@@ -72,7 +77,7 @@ const ProjectsPage = () => {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
         {/* Navbar */}
         <div className="relative z-10">
@@ -80,21 +85,24 @@ const ProjectsPage = () => {
         </div>
 
         {/* Title Content */}
-        <div className="relative z-10 text-center py-24" data-aos="fade-up">
-          <h1 className="text-4xl md:text-6xl font-medium uppercase tracking-wide">
+        <div
+          className="relative z-10 text-center py-24 px-6 sm:px-8"
+          data-aos="fade-up"
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium uppercase tracking-wide">
             Our Recent{" "}
             <span className="text-blue-500 drop-shadow-[0_0px_10px_rgba(59,130,246,0.8)]">
               Projects
             </span>
           </h1>
-          <p className="text-gray-300 mt-4 text-lg">
+          <p className="text-gray-300 mt-4 text-lg sm:text-base">
             Building Success, One Project at a Time.
           </p>
         </div>
       </div>
 
       {/* Projects Grid */}
-      <div className="container px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+      <div className="container px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         {projects.map((project) => (
           <a
             key={project.id}
@@ -106,7 +114,7 @@ const ProjectsPage = () => {
           >
             {/* Background Image with hover scale */}
             <div
-              className="w-full h-72 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-72 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
               style={{ backgroundImage: `url(${project.imageUrl})` }}
             ></div>
 

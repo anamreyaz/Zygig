@@ -18,7 +18,8 @@ const projects = [
   {
     id: 1,
     name: "Humraah Store",
-    description: "A responsive e-commerce fashion website offering a sleek design and user-friendly interface for seamless shopping.",
+    description:
+      "A responsive e-commerce fashion website offering a sleek design and user-friendly interface for seamless shopping.",
     imageUrl: Humraah1,
     hoverImageUrl: Humraah2,
     link: "https://humraahstore.com/?srsltid=AfmBOoq1I1mBX3kOFFx6O4oh3vFaAnRuOQUOm1yxb0zSP-EU_yeRi6HQ",
@@ -26,7 +27,8 @@ const projects = [
   {
     id: 2,
     name: "9am",
-    description: "A comprehensive e-commerce store website featuring multiple payment gateways for convenient and secure transactions.",
+    description:
+      "A comprehensive e-commerce store website featuring multiple payment gateways for convenient and secure transactions.",
     imageUrl: am1,
     hoverImageUrl: am2,
     link: "https://9am.co.in/?srsltid=AfmBOopyBt-NqeSTZ2LnVlixfnGf9a964CC7TGUGBz3L3uUbn-5gpyHg",
@@ -34,7 +36,8 @@ const projects = [
   {
     id: 3,
     name: "BotBuddy",
-    description: "A fully personalized Al chatbot app for Android and iOS with a stunning Ul and intelligent responses.",
+    description:
+      "A fully personalized Al chatbot app for Android and iOS with a stunning Ul and intelligent responses.",
     imageUrl: BotBuddy1,
     hoverImageUrl: BotBuddy2,
     link: "https://play.google.com/store/apps/details?id=com.ethix.botbuddy",
@@ -42,7 +45,8 @@ const projects = [
   {
     id: 4,
     name: "Mirage",
-    description: "A personalized wallpaper app offering unlimited, high-quality wallpapers to customize and enhance device aesthetics.",
+    description:
+      "A personalized wallpaper app offering unlimited, high-quality wallpapers to customize and enhance device aesthetics.",
     imageUrl: Mirage1,
     hoverImageUrl: Mirage2,
     link: "https://play.google.com/store/apps/details?id=com.ethix.mirage",
@@ -50,7 +54,8 @@ const projects = [
   {
     id: 5,
     name: "Man of the Match Analysis",
-    description: "A feedback-based analytical approach identifying key factors influencing the selection of \"Man of the Match\" awards.",
+    description:
+      'A feedback-based analytical approach identifying key factors influencing the selection of "Man of the Match" awards.',
     imageUrl: RP1,
     hoverImageUrl: RP2,
     link: "https://ieeexplore.ieee.org/document/10629539",
@@ -58,7 +63,8 @@ const projects = [
   {
     id: 6,
     name: "Diabetic Retinopathy Detection",
-    description: "An Al-powered model for detecting and classifying diabetic retinopathy using advanced retinal image analysis.",
+    description:
+      "An Al-powered model for detecting and classifying diabetic retinopathy using advanced retinal image analysis.",
     imageUrl: ML1,
     hoverImageUrl: ML2,
     link: "https://github.com/anamreyaz/Diabetic-Retinopathy-Detection",
@@ -71,10 +77,13 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <div className="text-white min-h-screen mx-10">
+    <div className="text-white min-h-screen px-6 lg:px-16">
       {/* Page Title Section */}
       <div className="relative bg-cover bg-center shadow-lg">
-        <div className="relative z-10 text-center pt-36 pb-10" data-aos="fade-up">
+        <div
+          className="relative z-10 text-center pt-36 pb-10"
+          data-aos="fade-up"
+        >
           <h1 className="text-4xl md:text-6xl font-medium uppercase tracking-wide">
             Our Recent{" "}
             <span className="text-blue-500 drop-shadow-[0_0px_10px_rgba(59,130,246,0.8)]">
@@ -88,7 +97,7 @@ const ProjectsSection = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="container px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         {projects.map((project) => (
           <a
             key={project.id}
@@ -100,12 +109,12 @@ const ProjectsSection = () => {
           >
             {/* Background Image with hover effect */}
             <div
-              className="w-full h-72 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-64 sm:h-72 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
               style={{
                 backgroundImage: `url(${project.imageUrl})`,
               }}
             >
-              {/* Image overlay on hover */}
+              {/* Hover Image Overlay */}
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{
