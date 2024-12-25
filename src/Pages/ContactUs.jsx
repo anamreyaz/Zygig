@@ -36,13 +36,10 @@ const ContactUsPage = () => {
             </p>
             <ul className="space-y-2 text-gray-400 text-lg">
               <li>
-                <span className="font-bold text-white">Email:</span> support@zygig.com
+                <span className="font-bold text-white">Email:</span> zygigofficial@gmail.com
               </li>
               <li>
-                <span className="font-bold text-white">Phone:</span> +1 (234) 567-890
-              </li>
-              <li>
-                <span className="font-bold text-white">Address:</span> 123 Innovation Lane, Future City, FC 56789
+                <span className="font-bold text-white">Phone:</span> +91 98117 87038
               </li>
             </ul>
           </div>

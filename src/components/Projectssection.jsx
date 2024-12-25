@@ -18,7 +18,7 @@ const projects = [
   {
     id: 1,
     name: "Humraah Store",
-    description: "A stunning web development project showcasing modern UI/UX.",
+    description: "A responsive e-commerce fashion website offering a sleek design and user-friendly interface for seamless shopping.",
     imageUrl: Humraah1,
     hoverImageUrl: Humraah2,
     link: "https://humraahstore.com/?srsltid=AfmBOoq1I1mBX3kOFFx6O4oh3vFaAnRuOQUOm1yxb0zSP-EU_yeRi6HQ",
@@ -26,7 +26,7 @@ const projects = [
   {
     id: 2,
     name: "9am",
-    description: "Innovative design combined with a powerful backend.",
+    description: "A comprehensive e-commerce store website featuring multiple payment gateways for convenient and secure transactions.",
     imageUrl: am1,
     hoverImageUrl: am2,
     link: "https://9am.co.in/?srsltid=AfmBOopyBt-NqeSTZ2LnVlixfnGf9a964CC7TGUGBz3L3uUbn-5gpyHg",
@@ -34,7 +34,7 @@ const projects = [
   {
     id: 3,
     name: "BotBuddy",
-    description: "An outstanding digital product with exceptional performance.",
+    description: "A fully personalized Al chatbot app for Android and iOS with a stunning Ul and intelligent responses.",
     imageUrl: BotBuddy1,
     hoverImageUrl: BotBuddy2,
     link: "https://play.google.com/store/apps/details?id=com.ethix.botbuddy",
@@ -42,26 +42,26 @@ const projects = [
   {
     id: 4,
     name: "Mirage",
-    description: "A stunning web development project showcasing modern UI/UX.",
+    description: "A personalized wallpaper app offering unlimited, high-quality wallpapers to customize and enhance device aesthetics.",
     imageUrl: Mirage1,
     hoverImageUrl: Mirage2,
     link: "https://play.google.com/store/apps/details?id=com.ethix.mirage",
   },
   {
     id: 5,
-    name: "Research Paper",
-    description: "Innovative design combined with a powerful backend.",
+    name: "Man of the Match Analysis",
+    description: "A feedback-based analytical approach identifying key factors influencing the selection of \"Man of the Match\" awards.",
     imageUrl: RP1,
     hoverImageUrl: RP2,
     link: "https://ieeexplore.ieee.org/document/10629539",
   },
   {
     id: 6,
-    name: "ML Model",
-    description: "An outstanding digital product with exceptional performance.",
+    name: "Diabetic Retinopathy Detection",
+    description: "An Al-powered model for detecting and classifying diabetic retinopathy using advanced retinal image analysis.",
     imageUrl: ML1,
     hoverImageUrl: ML2,
-    link: "https://clerk-template.framer.website/portfolio",
+    link: "https://github.com/anamreyaz/Diabetic-Retinopathy-Detection",
   },
 ];
 
