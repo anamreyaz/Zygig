@@ -118,7 +118,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="font-light text-white opacity-60 hover:text-gray-500 hover:scale-105 hover:opacity-90 hover:underline cursor-pointer transition-all duration-300">
-              <Link to="/Refund" onClick={scrollToTop}>
+              <Link to="/Cookie" onClick={scrollToTop}>
                 Cookie
               </Link>
             </li>

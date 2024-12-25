@@ -72,11 +72,11 @@ const HeroSection = () => {
           variants={fadeUpVariants}
           initial="hidden"
           animate="visible"
-          className="font-inter mt-16 text-center text-[85px] font-normal text-white leading-[85px]"
+          className="font-inter mt-16 text-center text-[70px] font-normal text-white leading-[85px]"
         >
-          Driven by Your Vision
+          Your Vision, Our Expertise
           <br />
-          Delivered with Expertise
+          Together We Achieve More
         </motion.h1>
 
         {/* Subtext */}
@@ -87,7 +87,7 @@ const HeroSection = () => {
           transition={{ delay: 0.3 }}
           className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto pt-6 mb-12"
         >
-          Your trusted partner for innovative and personalized services.
+          Zygig provides top-notch freelancing services tailored to your needs.
         </motion.p>
 
         {/* Buttons */}

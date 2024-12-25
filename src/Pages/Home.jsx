@@ -7,6 +7,7 @@ import HeroSection from "../components/HeroSection";
 // import Navbar from "../components/Navbar";
 import FAQ from "../components/FAQ"
 import Banner from "../components/Banner";
+import ProjectsSection from "../components/Projectssection";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         <FeatureSection  />
         {/* <Workflow /> */}
         <Testimonials />
+        <ProjectsSection />
         <FAQ />
         <Banner/>
         <Footer />

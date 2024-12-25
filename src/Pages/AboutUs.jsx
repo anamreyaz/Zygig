@@ -13,32 +13,32 @@ const AboutUsPage = () => {
     {
       title: 'Who We Are',
       content:
-        'Zygig is a forward-thinking company dedicated to transforming ideas into innovative solutions. With a team of passionate professionals, we strive to bridge the gap between technology and business success. Our commitment to excellence drives us to deliver exceptional products and services tailored to your needs.',
+        'Zygig is a forward thinking company focused on turning ideas into creative solutions. Our team of passionate professionals works to connect technology with business success. We are committed to delivering high quality products and services designed to meet your specific needs..',
     },
     {
       title: 'Our Mission',
       content:
-        'To empower businesses and individuals by providing cutting-edge solutions that enhance efficiency, foster innovation, and drive growth. We aim to be a trusted partner in your journey to success, leveraging technology to unlock new possibilities.',
+        'Our mission is to help businesses and individuals grow by offering innovative solutions that improve efficiency, encourage creativity, and drive progress. We aim to be your trusted partner, using technology to open new opportunities for success',
     },
     {
       title: 'Our Vision',
       content:
-        'At Zygig, we envision a world where technology seamlessly integrates into every aspect of life, simplifying processes, and creating opportunities for a better tomorrow. We aspire to be at the forefront of this transformation, leading with creativity and expertise.',
+        'At Zygig, we see a world where technology is a part of everyday life, making tasks easier and creating new possibilities for a better future. We want to lead this change with creativity and expertise, providing solutions that help everyone thrive.',
     },
     {
       title: 'Our Values',
       content:
-        'Integrity, innovation, and customer-centricity are the core values that define Zygig. We believe in building long-term relationships with our clients based on trust and delivering solutions that exceed expectations.',
+        'Our core values are integrity, innovation, and customer centricity. We believe in being honest and trustworthy, consistently seeking creative solutions, and focusing on our clients needs and goals. By delivering results that exceed expectations, we strive to build long-term relationships with our clients.',
     },
     {
       title: 'Our Team',
       content:
-        'Our team consists of experienced professionals, creative thinkers, and problem solvers who bring diverse perspectives to the table. Together, we work collaboratively to deliver solutions that make a meaningful impact.',
+        'Our team is made up of experienced professionals, creative minds, and problem solvers who bring fresh ideas. We work together to create solutions that make a real difference for our clients.',
     },
     {
       title: 'Why Choose Us?',
       content:
-        'With a focus on quality, innovation, and customer satisfaction, Zygig stands out as a reliable partner for all your business needs. Whether it’s developing cutting-edge software, designing impactful strategies, or providing unmatched support, we’ve got you covered.',
+        'Zygig stands out because we focus on quality, creativity, and customer satisfaction. Whether you need software development, strategic planning, or ongoing support, we are here to help your business succeed.',
     },
   ];
 
@@ -53,7 +53,7 @@ const AboutUsPage = () => {
         <header className="text-center mb-16" data-aos="fade-down">
           <h1 className="text-5xl font-extrabold mb-4">About Us</h1>
           <p className="text-lg text-gray-400">
-            Discover who we are, what drives us, and why we’re passionate about creating impactful solutions for the future.
+            Your Success is our priority. We bring together creativity, technology <br/> and strategy to deliver solutions that truly make a difference.
           </p>
         </header>
 

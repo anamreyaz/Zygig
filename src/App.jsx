@@ -8,7 +8,7 @@ import Testimonial from './Pages/Testimonial';
 import Home from './Pages/Home';
 import ServicesPage from './Pages/Services';
 import PrivacyPolicyPage from './Pages/Privacy';
-import RefundPolicyPage from './Pages/Refund';
+import CookiePage from './Pages/Cookie';
 import TermsAndConditionsPage from './Pages/Terms';
 import FAQPage from './Pages/FAQs';
 import AboutUsPage from './Pages/AboutUs';
@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/Testimonial" element={<Testimonial />} />
           <Route path="/Projects" element={<ProjectsPage />} />
           <Route path="/Privacy" element={<PrivacyPolicyPage />} />
-          <Route path="/Refund" element={<RefundPolicyPage />} />
+          <Route path="/Cookie" element={<CookiePage />} />
           <Route path="/Terms" element={<TermsAndConditionsPage />} />
           <Route path="/FAQs" element={<FAQPage />} />
           <Route path="/AboutUs" element={<AboutUsPage />} />

@@ -4,41 +4,41 @@ import 'aos/dist/aos.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-const RefundPolicyPage = () => {
+const CookiePage = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
   const policySections = [
     {
-      title: 'Eligibility for Refunds',
+      title: 'What are Cookies?',
       content:
-        'To be eligible for a refund, your request must be made within 14 days of purchase. The product or service must not have been used extensively or modified in any way.',
+        'Cookies are small text files that are stored on your device when you visit a website. They help us enhance your browsing experience by remembering your preferences and providing relevant content.',
     },
     {
-      title: 'Conditions for Refunds',
+      title: 'Why We Use Cookies',
       content:
-        'Refunds are applicable only if the product or service fails to meet the agreed specifications. Custom or personalized items are non-refundable unless defective or damaged.',
+        'We use cookies to improve website functionality, analyze traffic, and personalize content. Cookies enable us to understand user behavior and make data-driven improvements to our services.',
     },
     {
-      title: 'How to Request a Refund',
+      title: 'Types of Cookies We Use',
       content:
-        'To request a refund, please contact our support team at support@zygig.com. Provide your order ID, reason for the refund, and any supporting evidence for faster processing.',
+        'Essential Cookies ensure the website functions properly. Analytics Cookies help us measure performance and improve user experience. Advertising Cookies personalize ads based on your interests.',
     },
     {
-      title: 'Processing Refunds',
+      title: 'Managing Your Cookie Preferences',
       content:
-        'Once your refund request is approved, we will initiate the refund to your original payment method within 7-10 business days. You will receive an email confirmation once the process is complete.',
+        'You can manage or disable cookies through your browser settings. Please note that disabling cookies may affect the functionality and user experience of our website.',
     },
     {
-      title: 'Non-Refundable Items',
+      title: 'Third-Party Cookies',
       content:
-        'Certain items, such as digital downloads, gift cards, or promotional offers, are non-refundable. Please review the product details before making a purchase.',
+        'Some cookies are placed by third-party services that appear on our pages. We have no control over these cookies and recommend reviewing their cookie policies for more information.',
     },
     {
       title: 'Changes to this Policy',
       content:
-        'We reserve the right to update or modify this refund policy at any time. Any changes will be reflected on this page, and we encourage you to review it regularly.',
+        'We may update this cookie policy periodically. Any changes will be posted on this page, and we encourage you to review it regularly to stay informed about how we use cookies.',
     },
   ];
 
@@ -51,9 +51,9 @@ const RefundPolicyPage = () => {
       <div className="min-h-screen px-6 md:px-20 lg:px-40 py-20">
         {/* Header */}
         <header className="text-center mb-16" data-aos="fade-down">
-          <h1 className="text-5xl font-extrabold mb-4">Refund Policy</h1>
+          <h1 className="text-5xl font-extrabold mb-4">Cookie Policy</h1>
           <p className="text-lg text-gray-400">
-            At Zygig, we value your satisfaction and are committed to addressing your concerns. Please read our refund policy carefully.
+            Learn how Zygig uses cookies to enhance your experience and protect your privacy.
           </p>
         </header>
 
@@ -78,4 +78,4 @@ const RefundPolicyPage = () => {
   );
 };
 
-export default RefundPolicyPage;
+export default CookiePage;

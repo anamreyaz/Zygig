@@ -4,30 +4,56 @@ import Footer from "../components/Footer";
 
 const faqs = [
   {
-    question: "How long does it take to complete a project?",
+    question: "What services does Zygig offer?",
     answer:
-      "The duration varies depending on the scope and complexity of the project. We strive to deliver high-quality work within a reasonable timeframe, ensuring both efficiency and excellence.",
+      "Zygig offers app development, web development, UI/UX design, machine learning solutions. and research paper writing, tailored to meet your specific goals and business needs.",
   },
   {
-    question: "What is your design process like?",
+    question: "How do I book a call with your team?",
     answer:
-      "Our design process is collaborative and transparent. It typically involves initial consultation, concept development, feedback iterations, and finalization. We prioritize client input and strive to exceed expectations at every stage.",
+      "You can book a call by clicking the \"Schedule a Free Consultation\" button on our website and choosing a time that suits you.",
   },
   {
-    question: "Can I request revisions to the design?",
+    question: "How long does a project typically take?",
     answer:
-      "Absolutely! We welcome your feedback and offer unlimited revisions to ensure your complete satisfaction with the final design. Your input is invaluable in achieving the desired outcome for your project.",
+      "Timelines vary depending on the project's complexity, but we always ensure timely delivery. without compromising quality. We'll provide an estimated timeline during our consultation.",
   },
   {
-    question: "Do you provide support after project completion?",
+    question: "Can you customize your services based on our requirements?",
     answer:
-      "Yes, we believe in building long-term relationships with our clients. We offer post-project support to address any questions or issues that may arise, ensuring a seamless experience even after project completion.",
+      "Yes, all our services are fully customizable. We focus on understanding your unique needs and delivering solutions that align with your goals.",
   },
   {
-    question: "Can I see examples of your previous work?",
+    question: "Do you provide ongoing support after project delivery?",
     answer:
-      "Certainly! We have a portfolio showcasing our past projects and client testimonials. Feel free to explore our portfolio to see the quality of our work and the level of satisfaction among our clients.",
+      "Absolutely! We offer post-project support, including maintenance, updates, and assistance to ensure everything runs smoothly.",
   },
+  {
+    question: "What industries do you work with?",
+    answer:
+      "We work across various industries, including education, e-commerce, healthcare, startups. and more, providing tailored digital and research solutions.",
+  },
+  {
+    question: "How do you ensure quality in your projects?",
+    answer:
+      "Our team follows industry best practices, thorough testing, and feedback loops to ensure every project meets the highest quality standards.",
+  },
+  {
+    question: "What technologies do you use for development?",
+    answer:
+      "We use modern technologies like React, Flutter, Node.js, Python, and various Al/ML tools, ensuring cutting-edge and efficient solutions.",
+  },
+  {
+    question: "Do you offer revisions on projects?",
+    answer:
+      "Yes, we value your satisfaction. We offer a set number of revisions based on project scope to meet your expectations.",
+  },
+  {
+    question: "How can I get started with Zygig?",
+    answer:
+      "Simply reach out through our \"Book a Call button\", and we'll discuss your project requirements and how we can help you achieve your goals.",
+  },
+  
 ];
 
 const FAQPage = () => {

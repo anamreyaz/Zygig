@@ -3,13 +3,16 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Akash from "../assets/profile-pictures/Akash Sharma.jpeg";
+import Neha from "../assets/profile-pictures/Neha Kapoor.jpeg";
+import Mike from "../assets/profile-pictures/Mike Johnson.jpg";
+import Arjun from "../assets/profile-pictures/Arjun Mehta.jpeg";
+import Riya from "../assets/profile-pictures/Riya Verma.jpeg";
+import Noah from "../assets/profile-pictures/Noah Martinez.jpg";
+import Sameer from "../assets/profile-pictures/Sameer Joshi.jpeg";
+import Priya from "../assets/profile-pictures/Priya Malhotra.jpg";
+import Vikram from "../assets/profile-pictures/Vikram Das.jpg";
 
-import user1 from "../assets/profile-pictures/user1.jpg";
-import user2 from "../assets/profile-pictures/user2.jpg";
-import user3 from "../assets/profile-pictures/user3.jpg";
-import user4 from "../assets/profile-pictures/user4.jpg";
-import user5 from "../assets/profile-pictures/user5.jpg";
-import user6 from "../assets/profile-pictures/user6.jpg";
 
 const TestimonialPage = () => {
   useEffect(() => {
@@ -18,99 +21,75 @@ const TestimonialPage = () => {
 
   const testimonials = [
     {  
-        photo: user5,
-        name: 'John Doe',
-        designation: 'CEO',
-        company: 'TechWave Solutions',
-        description: 'Zygig has been a fantastic partner. Their attention to detail and commitment to excellence have helped us achieve our goals with ease. Highly recommended!',
+        photo: Akash,
+        name: 'Akash Sharma',
+        designation: 'CTO',
+        company: 'Innovatech Pvt Ltd',
+        description: 'Zygig transformed our app idea into a sleek, user-friendly product. Their professionalism and quick delivery exceeded our expectations!',
         rating: 4.5,
     },
     {
-        photo: user6,
-        name: 'Sarah Lee',
-        designation: 'Marketing Director',
-        company: 'BrightFuture Inc.',
-        description: 'Working with Zygig was an absolute pleasure. They understood our needs and delivered beyond our expectations. Their team is truly exceptional!',
+        photo: Neha,
+        name: 'Neha Kapoor',
+        designation: ' Marketing Head',
+        company: 'BrightEdge Media',
+        description: 'We partnered with Zygig for website development, and the results were stunning! A beautiful, responsive site that brought us more customers.',
         rating: 5,
     },
     {
-        photo: user4,
+        photo: Mike,
         name: 'Mike Johnson',
         designation: 'Product Manager',
         company: 'NextGen Innovators',
-        description: 'The quality of service and the professionalism displayed by Zygig is unmatched. Their expertise and dedication shine in every project.',
+        description: 'The designs Zygig created were not only heautiful but also functional. Our customers love how easy it is to navigate our product!',
         rating: 4,
     },
     {
-        photo: user2,
-        name: 'Emma Brown',
-        designation: 'Head of Operations',
-        company: 'Streamline Tech',
-        description: 'Zygig provided outstanding solutions that streamlined our operations and boosted our efficiency. Their team is incredible!',
+        photo: Arjun,
+        name: 'Arjun Mehta',
+        designation: 'Founder & CEO',
+        company: 'GreenWave Technologies',
+        description: 'Zygig\'s machine learning models gave us smart, data-driven insights. They truly helped us take our decision-making to the next level.',
         rating: 4.5,
     },
     {
-        photo: user3,
-        name: 'James Wilson',
-        designation: 'CTO',
-        company: 'InnovateHub',
-        description: 'Zygig delivered exceptional results on our recent project. Their innovative approach and expertise set them apart from the competition.',
+        photo: Riya,
+        name: 'Riya Verma',
+        designation: 'UX Designer',
+        company: 'PixelCurve Designs',
+        description: 'The UI/UX designs provided by Zygig were top-notch. User experience has improved significantly, and clients love our new interface.',
         rating: 5,
     },
     {
-        photo: user6,
-        name: 'Olivia Taylor',
-        designation: 'Founder',
-        company: 'EcoGreen Solutions',
-        description: 'The professionalism and dedication of Zygig are truly commendable. Their solutions perfectly aligned with our eco-friendly vision.',
-        rating: 4.5,
-    },
-    {
-        photo: user1,
+        photo: Noah,
         name: 'Noah Martinez',
         designation: 'Product Designer',
         company: 'DesignPros',
-        description: 'Collaborating with Zygig was an enriching experience. Their insights and expertise helped us refine our product design and meet user expectations.',
+        description: 'Working with Zygig was effortless. They understood our requirements and delivered an incredible website on time and within budget!',
         rating: 4,
     },
     {
-        photo: user2,
-        name: 'Sophia Davis',
-        designation: 'Marketing Head',
-        company: 'BrandElevate',
-        description: 'Zygig’s marketing strategies are top-notch. Their innovative campaigns and strategies have taken our brand to new heights.',
+        photo: Sameer,
+        name: 'Sameer Joshi',
+        designation: 'Software Engineer',
+        company: 'NexGen Apps',
+        description: 'I needed research paper support, and Zygig delivered perfectly. Professional, well-structured writing that met all academic guidelines.',
         rating: 5,
     },
     {
-        photo: user5,
-        name: 'Liam Moore',
-        designation: 'Operations Manager',
+      photo: Priya,
+      name: 'Priya Malhotra',
+      designation: 'Operations Manager',
+      company: 'BloomTech Ventures',
+      description: 'Our mobile app looks and works great thanks to Zygig\'s development team. Their attention to detail sets them apart!',
+      rating: 4.5,
+  },
+    {
+        photo: Vikram,
+        name: 'Vikram Das',
+        designation: 'Data Analyst',
         company: 'LogiTech Systems',
-        description: 'Zygig exceeded our expectations with their customized solutions. They tackled complex challenges with ease and professionalism.',
-        rating: 4.5,
-    },
-    {
-        photo: user6,
-        name: 'Isabella Jackson',
-        designation: 'HR Manager',
-        company: 'WorkplacePro',
-        description: 'Zygig’s expertise in optimizing our processes has been phenomenal. Their team is highly skilled and professional.',
-        rating: 4,
-    },
-    {
-        photo: user3,
-        name: 'William Anderson',
-        designation: 'Chief Analyst',
-        company: 'DataEdge Analytics',
-        description: 'Zygig’s solutions were instrumental in helping us analyze and leverage data effectively. Their insights are invaluable.',
-        rating: 5,
-    },
-    {
-        photo: user2,
-        name: 'Charlotte White',
-        designation: 'Business Strategist',
-        company: 'GrowBeyond Ventures',
-        description: 'Zygig provided exceptional support and innovative strategies that helped us achieve our business objectives efficiently.',
+        description: 'Their machine learning solutions helped automate our workflows and increase efficiency. The team is highly skilled and truly understands Al.',
         rating: 4.5,
     },
 ];
@@ -176,11 +155,10 @@ const TestimonialPage = () => {
         {/* Headline */}
         <header className="py-20 text-center" data-aos="fade-down">
           <h1 className="text-7xl font-[425] tracking-wide mb-4 mt-12 ">
-            Words From Our <br/> <div className="italic">Partners</div>
+             <span className="italic">Client Voices</span>
           </h1>
-          <p className="text-base text-gray-400 mt-6">
-            See what our clients have to say about their experience with Zygig. Their stories <br />
-            speak volumes about the quality of our work and the satisfaction of our clients.
+          <p className="text-2xl text-gray-400 mt-6">
+            Real Stories, Real Success
           </p>
         </header>
 
