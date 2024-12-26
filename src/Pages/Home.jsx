@@ -14,7 +14,6 @@ const Home = () => {
   return (
     <>
     <div>
-        {/* <Navbar /> */}
         <HeroSection />
         <FeatureSection  />
         {/* <Workflow /> */}

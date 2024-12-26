@@ -86,7 +86,7 @@ const TestimonialPage = () => {
   },
     {
         photo: Vikram,
-        name: 'Vikram Das',
+        name: 'Vikram Thapa',
         designation: 'Data Analyst',
         company: 'LogiTech Systems',
         description: 'Their machine learning solutions helped automate our workflows and increase efficiency. The team is highly skilled and truly understands Al.',

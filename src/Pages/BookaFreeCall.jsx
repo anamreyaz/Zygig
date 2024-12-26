@@ -60,7 +60,7 @@ const BookFreeCallPage = () => {
             <div className="flex justify-center">
               <button
                 className="relative px-8 py-4 bg-gradient-to-br from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-gray-800 transition-transform transform hover:scale-105 duration-300 overflow-hidden"
-                onClick={() => window.open('https://calendly.com/zygigofficial/30min4423022', '_blank')}
+                onClick={() => window.open('https://calendly.com/zygigofficial/30min', '_blank')}
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-gray-800 to-gray-900 opacity-30 blur-sm"></span>
                 <span className="relative">Schedule a Call</span>

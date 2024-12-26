@@ -66,21 +66,16 @@ const Navbar = () => {
 
           {/* Desktop Motion Button */}
           <div className="hidden lg:block">
-            <motion.div
-              initial={{ opacity: 1, y: 0 }}
-              animate={{ opacity: 1, y: 0 }}
-            >
-            <Link to="/BookaFreeCall">
-              <motion.button
-                whileHover="hover"
-                whileTap="tap"
-                variants={buttonVariants}
-                className="relative px-10 py-3 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
-              >
-                <span className="relative z-10">Book a Free Call</span>
-              </motion.button>
-              </Link>
-            </motion.div>
+           <a href="https://calendly.com/zygigofficial/30min" target="_blank" rel="noopener noreferrer">
+                       <motion.button
+                         whileHover="hover"
+                         whileTap="tap"
+                         variants={buttonVariants}
+                         className="relative px-8 py-4 w-full sm:w-auto bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
+                       >
+                         Book a Free Call
+                       </motion.button>
+                     </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -118,15 +113,16 @@ const Navbar = () => {
                     initial={{ opacity: 1, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
                   >
-                    <motion.button
-                      whileHover="hover"
-                      whileTap="tap"
-                      variants={buttonVariants}
-                      className="relative px-8 py-4 bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
-                      onClick={toggleNavbar}
-                    >
-                      <span className="relative z-10">Get Started Today!</span>
-                    </motion.button>
+<a href="https://calendly.com/zygigofficial/30min" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              whileHover="hover"
+              whileTap="tap"
+              variants={buttonVariants}
+              className="relative px-8 py-4 w-full sm:w-auto bg-[rgba(238,234,234,0.14)] text-white border border-[rgba(255,255,255,0.1)] rounded-full font-medium"
+            >
+              Book a Free Call
+            </motion.button>
+          </a>
                   </motion.div>
                 </li>
               </ul>
