@@ -16,16 +16,6 @@ const PrivacyPolicyPage = () => {
         'Welcome to Zygig. Your privacy is of utmost importance to us. This Privacy Policy outlines the types of information we collect, how we use it, and the measures we take to protect it.',
     },
     {
-      title: 'Information We Collect',
-      content:
-        'We may collect personal information such as your name, email address, and payment details when you use our services. Additionally, we may collect non-personal data like browser type, device information, and usage statistics to enhance your experience.',
-    },
-    {
-      title: 'How We Use Your Information',
-      content:
-        'Your information helps us deliver, operate, and improve our services. We may use it to process transactions, send updates, personalize content, or comply with legal requirements.',
-    },
-    {
       title: 'Data Protection',
       content:
         'We implement state-of-the-art security measures to protect your data from unauthorized access, alteration, or disclosure. Your data is encrypted and securely stored in compliance with industry standards.',

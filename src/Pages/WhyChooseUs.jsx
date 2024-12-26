@@ -40,6 +40,12 @@ const WhyChooseUsPage = () => {
         "We stay ahead of trends and technologies to bring you cutting-edge solutions, keeping your business competitive and forward-thinking.",
       icon: "🚀",
     },
+    {
+      title: "Timely Delivery",
+      description:
+        "We understand the importance of deadlines. Our team ensures that every project is completed on time without compromising quality.",
+      icon: "⏱️",
+    },
   ];
 
   return (

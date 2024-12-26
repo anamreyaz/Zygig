@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from 'react-router-dom';
-import App from "../assets/Services/App-home.jpg"
-import UI from "../assets/Services/UI-home.jpg"
-import Web from "../assets/Services/Web-home.jpg"
-import RP from "../assets/Services/RP-home.jpg"
-import GD from "../assets/Services/GD-home.jpg"
-import ML from "../assets/Services/ML-home.jpeg"
+import App from "../assets/Services/App-service.jpeg"
+import UI from "../assets/Services/UI-services.jpeg"
+import Web from "../assets/Services/Web-services.jpeg"
+import RP from "../assets/Services/RP-service.jpeg"
+import GD from "../assets/Services/GD-services.jpeg"
+import ML from "../assets/Services/ML-services.jpeg"
 
 // Data for Cards
 const cardsData = [

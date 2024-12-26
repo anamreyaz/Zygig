@@ -251,7 +251,7 @@ const HeroSection = () => {
 
       {/* Mobile View (300px to 500px) */}
       <motion.div
-        className="block sm:hidden relative text-center z-10 px-6 pt-20"
+        className="-mt-32 block sm:hidden relative text-center z-10 px-6 pt-20"
         initial="hidden"
         animate="visible"
       >
