@@ -5,7 +5,7 @@ import App from "../assets/Services/App-service.jpeg"
 import UI from "../assets/Services/UI-services.jpeg"
 import Web from "../assets/Services/Web-services.jpeg"
 import RP from "../assets/Services/RP-service.jpeg"
-import GD from "../assets/Services/GD-services.jpeg"
+import GD from "../assets/Services/GD-Services.jpeg"
 import ML from "../assets/Services/ML-services.jpeg"
 
 // Data for Cards
