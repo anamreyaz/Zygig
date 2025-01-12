@@ -158,86 +158,48 @@
 import React, { useEffect, useState } from "react";
 import Akash from "../assets/profile-pictures/Akash Sharma.jpeg";
 import Neha from "../assets/profile-pictures/Neha Kapoor.jpeg";
-import Mike from "../assets/profile-pictures/Mike Johnson.jpg";
-import Arjun from "../assets/profile-pictures/Arjun Mehta.jpeg";
-import Riya from "../assets/profile-pictures/Riya Verma.jpeg";
-import Noah from "../assets/profile-pictures/Noah Martinez.jpg";
-import Sameer from "../assets/profile-pictures/Sameer Joshi.jpeg";
-import Priya from "../assets/profile-pictures/Priya Malhotra.jpg";
-import Vikram from "../assets/profile-pictures/Vikram Das.jpg";
+import Abdul from "../assets/profile-pictures/Abdul Qadir.jpeg";
+import Rajesh from "../assets/profile-pictures/Rajesh Kumar.jpeg";
+import Vikram from "../assets/profile-pictures/Vikram Khanna.jpeg";
+import Riya from "../assets/profile-pictures/image.png";
 
 const testimonials = [
   {       photo: Akash,
           name: 'Akash Sharma',
-          designation: 'CTO',
-          company: 'Innovatech Pvt Ltd',
-          description: 'Zygig transformed our app idea into a sleek, user-friendly product. Their professionalism and quick delivery exceeded our expectations!',
+          description: 'Zygig brought our app idea to life and made it so easy to use. The team was great to work with, and they delivered faster than we expected!',
           rating: 4.5,
       },
       {
           photo: Neha,
           name: 'Neha Kapoor',
-          designation: ' Marketing Head',
-          company: 'BrightEdge Media',
-          description: 'We partnered with Zygig for website development, and the results were stunning! A beautiful, responsive site that brought us more customers.',
+          description: 'Finding the right talent felt overwhelming until we worked with Zygig. They connected us with skilled professionals quickly, and the quality of work was top-notch!',
           rating: 5,
       },
       {
-          photo: Mike,
-          name: 'Mike Johnson',
-          designation: 'Product Manager',
-          company: 'NextGen Innovators',
-          description: 'The designs Zygig created were not only beautiful but also functional. Our customers love how easy it is to navigate our product!',
+          photo: Vikram,
+          name: 'Vikram Khanna',
+          description: 'Zygig created a stunning website for us that perfectly matched our vision. The process was smooth, and their team was always ready to listen and adapt. Highly recommend them!',
           rating: 4,
       },
       {
-          photo: Arjun,
-          name: 'Arjun Mehta',
-          designation: 'Founder & CEO',
-          company: 'GreenWave Technologies',
-          description: 'Zygig\'s machine learning models gave us smart, data-driven insights. They truly helped us take our decision-making to the next level.',
+          photo: Abdul,
+          name: 'Abdul Qadir',
+          description: 'We needed a custom machine-learning solution, and Zygig delivered exactly what we were looking for. They simplified the complex and made it work seamlessly for us!',
           rating: 4.5,
       },
       {
           photo: Riya,
           name: 'Riya Verma',
-          designation: 'UX Designer',
-          company: 'PixelCurve Designs',
-          description: 'The UI/UX designs provided by Zygig were top-notch. User experience has improved significantly, and clients love our new interface.',
+          description: 'Zygig built us a great website—just what we wanted! The process was easy, and they delivered on time.',
           rating: 5,
       },
       {
-          photo: Noah,
-          name: 'Noah Martinez',
-          designation: 'Product Designer',
-          company: 'DesignPros',
-          description: 'Working with Zygig was effortless. They understood our requirements and delivered an incredible website on time and within budget!',
+          photo: Rajesh,
+          name: 'Rajesh Kumar',
+          description: 'Zygig’s prediction model worked like magic! It was accurate, reliable, and super easy to understand.',
           rating: 4,
       },
-      {
-          photo: Sameer,
-          name: 'Sameer Joshi',
-          designation: 'Software Engineer',
-          company: 'NexGen Apps',
-          description: 'I needed research paper support, and Zygig delivered perfectly. Professional, well-structured writing that met all academic guidelines.',
-          rating: 5,
-      },
-      {
-        photo: Priya,
-        name: 'Priya Malhotra',
-        designation: 'Operations Manager',
-        company: 'BloomTech Ventures',
-        description: 'Our mobile app looks and works great thanks to Zygig\'s development team. Their attention to detail sets them apart!',
-        rating: 4.5,
-    },
-      {
-          photo: Vikram,
-          name: 'Vikram Thapa',
-          designation: 'Data Analyst',
-          company: 'LogiTech Systems',
-          description: 'Their machine learning solutions helped automate our workflows and increase efficiency. The team is highly skilled and truly understands Al.',
-          rating: 4.5,
-      },
+    
 ];
 
 function Testimonials() {
